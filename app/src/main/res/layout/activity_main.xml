@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imAustria"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="32dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInfoCountry"
+                app:srcCompat="@drawable/austria" />
+
+            <ImageView
+                android:id="@+id/imPoland"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="@+id/imAustria"
+                app:layout_constraintTop_toBottomOf="@+id/imAustria"
+                app:srcCompat="@drawable/poland" />
+
+            <ImageView
+                android:id="@+id/imItaly"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="@+id/imPoland"
+                app:layout_constraintTop_toBottomOf="@+id/imPoland"
+                app:srcCompat="@drawable/italy" />
+
+            <ImageView
+                android:id="@+id/imColombia"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="@+id/imItaly"
+                app:layout_constraintTop_toBottomOf="@+id/imItaly"
+                app:srcCompat="@drawable/colom" />
+
+            <ImageView
+                android:id="@+id/imAustria5"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="@+id/imColombia"
+                app:layout_constraintTop_toBottomOf="@+id/imColombia"
+                app:srcCompat="@drawable/austria" />
+
+            <ImageView
+                android:id="@+id/imMadagascar"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="@+id/imColombia"
+                app:layout_constraintTop_toBottomOf="@+id/imColombia"
+                app:srcCompat="@drawable/madagascar" />
+
+            <ImageView
+                android:id="@+id/imThailand"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="@+id/imAustria5"
+                app:layout_constraintTop_toBottomOf="@+id/imAustria5"
+                app:srcCompat="@drawable/thailand" />
+
+            <ImageView
+                android:id="@+id/imDenmark"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="@+id/imThailand"
+                app:layout_constraintTop_toBottomOf="@+id/imThailand"
+                app:srcCompat="@drawable/denmark" />
+
+            <ImageView
+                android:id="@+id/imSwitzerland"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imDenmark"
+                app:layout_constraintTop_toBottomOf="@+id/imDenmark"
+                app:srcCompat="@drawable/switzerland" />
+
+            <TextView
+                android:id="@+id/tvAustria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/austria"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                app:layout_constraintStart_toEndOf="@+id/imAustria"
+                app:layout_constraintTop_toTopOf="@+id/imAustria" />
+
+            <TextView
+                android:id="@+id/tvPoland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/poland"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                app:layout_constraintStart_toEndOf="@+id/imPoland"
+                app:layout_constraintTop_toTopOf="@+id/imPoland" />
+
+            <TextView
+                android:id="@+id/tvItaly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/italy"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                app:layout_constraintStart_toEndOf="@+id/imItaly"
+                app:layout_constraintTop_toTopOf="@+id/imItaly" />
+
+            <TextView
+                android:id="@+id/tvColombia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/colombia"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                app:layout_constraintStart_toEndOf="@+id/imColombia"
+                app:layout_constraintTop_toTopOf="@+id/imColombia" />
+
+            <TextView
+                android:id="@+id/tvMadagascar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/madagascar"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                app:layout_constraintStart_toEndOf="@+id/imAustria5"
+                app:layout_constraintTop_toTopOf="@+id/imAustria5" />
+
+            <TextView
+                android:id="@+id/tvThailand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/thailand"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                app:layout_constraintStart_toEndOf="@+id/imThailand"
+                app:layout_constraintTop_toTopOf="@+id/imThailand" />
+
+            <TextView
+                android:id="@+id/tvDenmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/denmark"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                app:layout_constraintStart_toEndOf="@+id/imDenmark"
+                app:layout_constraintTop_toTopOf="@+id/imDenmark" />
+
+            <TextView
+                android:id="@+id/tvSwitzerland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/switzerland"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                app:layout_constraintStart_toEndOf="@+id/imSwitzerland"
+                app:layout_constraintTop_toTopOf="@+id/imSwitzerland" />
+
+            <TextView
+                android:id="@+id/tvInfoCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="Страны"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
